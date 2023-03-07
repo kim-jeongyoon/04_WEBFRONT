@@ -1,0 +1,79 @@
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Julee&display=swap');
+</style>
+
+#size-test > li:nth-child(1) {font-size: 24px;}
+#size-test > li:nth-child(2) {font-size: 18pt;}
+#size-test > li:nth-child(3) {font-size: 150%;}
+#size-test > li:nth-child(4) {font-size: 1.5em;}
+
+/*크롬브라우저 기준
+    기본 글꼴 크기: 16px 
+*/
+
+
+
+/*font-weight*/
+#weight-test > li {
+    font-size: 34px;
+}
+
+#weight-test > li:nth-child(1) { font-weight: 600;}
+#weight-test > li:nth-child(2) { font-weight: bold;}
+#weight-test > li:nth-child(3) { font-weight: bolder;}
+#weight-test > li:nth-child(4) { font-weight: lighter;}
+#weight-test > li:nth-child(5) { font-weight: normal;
+            font-style: italic;}
+
+/*font-family*/
+
+.cls > li {
+    font-size: 24p
+}
+
+#family-test1 >li:nth-child(1) {
+    font-family: '궁서';
+    /*없는 폰트인 경우 기본폰트로 설정*/
+}
+
+#family-test1 >li:nth-child(2) {
+    font-family: '배달의민족체', '굴림체';
+    /*앞폰트가 없는 경우 뒤에있는 폰트로 설정*/
+}
+
+/*웹폰트*/
+/*link 태그를 이용한 방법 */
+
+#family-test2 > li:nth-child(1) {
+    font-family : 'Single Day', cursive;
+}
+
+#family-test2 > li:nth-child(2){
+
+    font-family: 'Julee', cursive;
+    
+}
+
+
+@font-face {
+    font-family: 'TTTtangsbudaejjigaeB';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2212@1.0/TTTtangsbudaejjigaeB.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
+/*@font-face이용*/
+#family-test2 > li:nth-child(3){
+    font-family : 'TTTtangsbudaejjigaeB';
+}
+
+/*모든글꼴*/
+/*
+* { 
+     font-family: 'TTTtangsbudaejjigaeB';
+}
+
+*/
+
+
+

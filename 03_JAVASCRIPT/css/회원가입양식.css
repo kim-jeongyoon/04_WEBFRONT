@@ -1,0 +1,10 @@
+.confirm{
+    color : green;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.error{
+    color: red;
+    font-weight: bold;
+}
